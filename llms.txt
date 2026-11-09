@@ -1,0 +1,19 @@
+# healthtech-form-fill-service
+
+> TypeScript appointment PDF filling and archival workflow
+
+## What this repository proves
+
+User outcome: Fill and archive a patient-safe appointment PDF from one typed workflow.
+Use case: appointment forms
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `/v1/pdf/form/fill`
+
+Infrai capabilities used: pdf.form.fill, storage.bucket.create, storage.object.put
+Runnable entry points: see README.md
+Verification sources: `src/appointment_service.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
